@@ -18,4 +18,6 @@ Rails.application.routes.draw do
     get 'users/sign_out', to: 'devise/sessions#destroy'
   end
 
+  resources :discussions, only: [:index]
+
 end
