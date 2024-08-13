@@ -1,4 +1,6 @@
-<div id="<%= dom_id(discussion) %>" class="mb-2">
-  <h2><%= discussion.name %></h2>
-  Pinned: <%= discussion.pinned %> | Closed: <%= discussion.closed %>
+<div class="card mb-3" id="<%= dom_id(discussion) %>">
+  <div class="card-body">
+    <h5 class="card-title"><%= discussion.name %></h5>
+    <p class="card-text">Pinned: <%= discussion.pinned %> | Closed: <%= discussion.closed %></p>
+  </div>
 </div>
