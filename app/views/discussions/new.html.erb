@@ -1,3 +1,3 @@
-<h1>New discussion</h1>
-
-<%= render 'form', discussion: @discussion %>
+<%= turbo_frame_tag "new_discussion_frame" do %>
+  <%= render 'form', discussion: @discussion %>
+<% end %>
